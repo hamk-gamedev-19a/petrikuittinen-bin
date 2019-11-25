@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+double cmToInches(double cm) {
+  return cm/2.54;
+}
+double inchesToCm(double inch) {
+  return inch*2.54;
+}
+
+int main() {
+  double inch, cm;
+  printf("How many inches?");
+  if (scanf("%lf", &inch)) {
+    cm = inchesToCm(inch);
+    printf("%lf is %.2lf\n", inch, cm);
+  } else {
+    printf("Empty input!\n");
+  }
+  return 0;
+}

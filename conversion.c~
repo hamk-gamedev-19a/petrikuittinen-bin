@@ -1,0 +1,6 @@
+double cmToInches(double cm) {
+  return cm/2.54;
+}
+double inchesToCm(double inch) {
+  return inch*2.54;
+}

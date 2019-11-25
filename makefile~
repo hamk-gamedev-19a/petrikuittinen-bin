@@ -1,0 +1,16 @@
+CC = gcc
+CFLAGS=-O -g -Wall
+
+all: converter
+
+converter: main.o converter.o
+	 $(CC) -o converter $(CFLAGS) main.o converter.o
+
+
+main.o: main.o converter.h
+	 $(CC) $(CFLAGS) -c main.o
+converter.o: converter.o converter.h
+	 $(CC) $(CFLAGS) -c converter.c
+
+clean:
+	 rm main.o conversion.o converter 

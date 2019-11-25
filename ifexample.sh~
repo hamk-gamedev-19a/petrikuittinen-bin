@@ -1,0 +1,14 @@
+#!/bin/sh
+echo How old are you?
+
+read age
+
+if [ "$age" -lt 0 ]
+then
+    echo "Nobody can be so young!"
+elif [ "$age" -lt 18 ]
+    echo "You are still a child"
+else
+    echo You are too young to drink.
+fi
+     
