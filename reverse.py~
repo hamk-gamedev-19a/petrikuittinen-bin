@@ -1,0 +1,6 @@
+import sys
+path = sys.argv[1]
+with open("path", "r+") as f:
+    data = f.read()
+    print(data[::-1])
+    

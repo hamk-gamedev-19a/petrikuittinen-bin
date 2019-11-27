@@ -1,7 +1,7 @@
 #!/bin/sh
 
-for argv in "$@"
+for arg in "$@"
 do
-    echo $argv
-    wc $argv
+    echo $arg
+    wc $arg
 done

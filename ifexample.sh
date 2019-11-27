@@ -1,6 +1,5 @@
 #!/bin/sh
 echo How old are you?
-
 read age
 
 if [ "$age" -lt 0 ]

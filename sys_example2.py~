@@ -1,0 +1,10 @@
+import sys
+
+a = []
+for argv in sys.argv[1:]:
+    try:
+        a.append(float(argv))
+    except ValueError:
+        pass
+print("Sum:", sum(a))
+

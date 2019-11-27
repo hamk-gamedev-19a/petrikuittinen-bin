@@ -1,0 +1,8 @@
+import sys
+
+# "cat" command
+for arg in sys.argv[1:]:
+    with open(arg) as f:
+        for line in f:
+            print(line, end="")
+

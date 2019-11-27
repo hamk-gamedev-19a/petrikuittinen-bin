@@ -6,7 +6,7 @@ int main() {
   printf("How many inches?");
   if (scanf("%lf", &inch)) {
     cm = inchesToCm(inch);
-    printf("%.2lf is %.2lf\n", inch, cm);
+    printf("%.2lf inches is %.2lf cm\n", inch, cm);
   } else {
     printf("Invalid input!\n");
   }

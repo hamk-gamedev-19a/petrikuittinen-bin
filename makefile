@@ -20,3 +20,4 @@ conversion.o:  conversion.c conversion.h
 # To start over from scratch, type 'make clean'.
 clean:
 	rm $(TARGET) *.o
+
